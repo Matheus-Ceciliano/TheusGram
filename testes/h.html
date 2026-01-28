@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>TheusGram</title>
+</head>
+
+<body>
+    <button id="theme-toggle" aria-label="Alternar tema">
+        <svg width="72" height="32" viewBox="0 0 72 32" xmlns="http://www.w3.org/2000/svg">
+            <!-- Trilho -->
+            <rect id="toggle-bg" x="1" y="1" width="70" height="30" rx="15" fill="var(--toggle-bg)" />
+
+            <!-- Bolinha -->
+            <g id="toggle-knob" transform="translate(2 2)">
+                <circle cx="14" cy="14" r="14" fill="var(--knob)" />
+
+                <!-- SOL -->
+                <g id="icon-sun" transform="translate(14 14)" stroke="var(--icon)" stroke-width="1.4" fill="none"
+                    stroke-linecap="round">
+                    <!-- círculo central -->
+                    <circle cx="0" cy="0" r="4" />
+
+                    <!-- raios principais -->
+                    <line x1="0" y1="-7" x2="0" y2="-11" />
+                    <line x1="0" y1="7" x2="0" y2="11" />
+                    <line x1="-7" y1="0" x2="-11" y2="0" />
+                    <line x1="7" y1="0" x2="11" y2="0" />
+
+                    <!-- raios diagonais -->
+                    <line x1="-5" y1="-5" x2="-8" y2="-8" />
+                    <line x1="5" y1="-5" x2="8" y2="-8" />
+                    <line x1="-5" y1="5" x2="-8" y2="8" />
+                    <line x1="5" y1="5" x2="8" y2="8" />
+                </g>
+
+                <!-- LUA -->
+                <g id="icon-moon" transform="translate(14 14)" fill="var(--icon)" opacity="0">
+                    <path d="M6 0
+             A6 6 0 1 1
+             0 -6
+             A4.5 4.5 0 0 0
+             6 0Z" />
+                </g>
+            </g>
+        </svg>
+    </button>
+
+
+
+    <h1>Trocando Cores</h1>
+
+</body>
+
+
+
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark");
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,47 @@
+:root {
+    --toggle-bg: #2f2f2f;
+    --knob: #ffffff;
+    --icon: #fbbf24;
+    --page-bg: #ffffff;
+}
+
+.dark {
+    --toggle-bg: #0ea5e9;
+    --knob: #ffffff;
+    --icon: #0f172a;
+    --page-bg: #020617;
+}
+
+body {
+    background: var(--page-bg);
+    transition: background 0.4s ease;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* animações */
+#toggle-knob {
+    transition: transform 0.45s cubic-bezier(.4, 0, .2, 1);
+}
+
+.dark #toggle-knob {
+    transform: translate(38px, 2px);
+}
+
+#icon-sun,
+#icon-moon {
+    transition: opacity 0.3s ease;
+}
+
+.dark #icon-sun {
+    opacity: 0;
+}
+
+.dark #icon-moon {
+    opacity: 1;
+}
