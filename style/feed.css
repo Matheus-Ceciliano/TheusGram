@@ -312,6 +312,8 @@ body {
         display: none;
     }
 
+
+
     .container {
         align-items: center;
         justify-content: center;
@@ -345,7 +347,7 @@ body {
     }
 
     .feed .post img {
-        width: 390px;
+        width: 380px;
     }
 
     .information {
@@ -354,7 +356,7 @@ body {
 
     .reaction {
         width: 376px;
-        font-size: 50px;
+
     }
 
     .reaction p {
@@ -365,9 +367,14 @@ body {
     .about {
         width: 396px;
     }
+
+    .container .story {
+        display: none;
+    }
+
 }
 
-@media (min-width:495px) {
+@media (min-width:480px) and (max-width:620px) {
 
     .feed {
 
@@ -393,4 +400,9 @@ body {
     .about {
         width: 396px;
     }
+
+    .container .story {
+        display: none;
+    }
+
 }
