@@ -98,7 +98,7 @@ body {
     position: relative;
     gap: 15px;
     padding: 4px;
-    margin-right: 180px;
+    margin-right: 100px;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
@@ -141,7 +141,7 @@ body {
 .feed {
     display: flex;
     flex-direction: column;
-    margin-right: 150px;
+    margin-right: 100px;
     margin-top: 50px;
     align-items: center;
 
@@ -287,4 +287,110 @@ body {
 
 .hashtag {
     color: #8450F7;
+}
+
+
+
+
+/*RESPONSIVIDADE */
+
+@media (min-width:926px) and (max-width: 1200px) {
+
+    .container .story {
+        margin-left: 170px;
+    }
+
+    .feed {
+        margin-left: 177px;
+    }
+
+
+}
+
+@media (max-width:926px) {
+    .middle-menu {
+        display: none;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container .story {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feed {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width:425px) {
+
+    .feed {
+
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+
+    }
+
+    .feed .post img {
+        width: 390px;
+    }
+
+    .information {
+        width: 346px;
+    }
+
+    .reaction {
+        width: 376px;
+        font-size: 50px;
+    }
+
+    .reaction p {
+
+        font-size: 12px;
+    }
+
+    .about {
+        width: 396px;
+    }
+}
+
+@media (min-width:495px) {
+
+    .feed {
+
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+
+    }
+
+    .feed .post img {
+        width: 480px;
+    }
+
+    .information {
+        width: 396px;
+    }
+
+    .reaction {
+        width: 396px;
+    }
+
+    .about {
+        width: 396px;
+    }
 }
