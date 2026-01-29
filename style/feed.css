@@ -466,7 +466,17 @@ body {
         align-items: center;
         justify-content: center;
         margin: 0;
-        margin-left: 97px;
+        margin-left: 52px;
+        overflow: hidden;
     }
+
+    .avatar-border,
+    .story img {
+        flex-shrink: 0;
+        /* impede de encolher */
+    }
+
+    /* impede de encolher */
+
 
 }
