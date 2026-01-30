@@ -447,23 +447,28 @@ body {
 
     .menu_mobile {
         width: 100%;
+        display: flex;
+        margin: 0;
+        align-items: center;
+
 
 
 
 
     }
 
-    .menu_mobile .heart {
-        margin-right: 10px;
-    }
 
     .avatar-border {
         width: 49px;
+        overflow: hidden;
         height: 49px;
+        border-radius: 50%;
     }
 
     .story img {
         width: 45px;
+        position: absolute;
+
     }
 
     .container .story {
@@ -471,42 +476,55 @@ body {
         justify-content: center;
         margin: 0;
         width: 100%;
+        gap: 10px;
         overflow: hidden;
-        width: 100%;
-        margin-left: 50px;
+
+
+
     }
 
     .feed {
 
         align-items: center;
         justify-content: center;
-        margin-left: auto;
+        margin: auto;
+        margin-top: 20px;
 
     }
 
+
+
     .feed .post img {
-        width: 360px;
-        height: 500px;
+        width: 340px;
+        height: 450px;
     }
 
     .information {
-        width: 356px;
+        width: 320px;
+
     }
 
     .reaction {
-        width: 376px;
+        width: 346px;
+
 
     }
 
     .reaction p {
-
+        margin-right: 6px;
+        margin-left: 4px;
         font-size: 12px;
     }
 
     .about {
-        width: 386px;
+        width: 341px;
     }
 
+
+    .collum2 {
+        margin-inline-start: 130px;
+
+    }
 
 
 }
