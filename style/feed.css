@@ -320,7 +320,7 @@ body {
     }
 
     .menu_mobile {
-        display: none;
+        display: flex;
         justify-content: space-between;
 
         width: 100%;
@@ -444,13 +444,26 @@ body {
 }
 
 @media (max-width:430px) {
+
+    .menu_mobile {
+        width: 100%;
+
+
+
+
+    }
+
+    .menu_mobile .heart {
+        margin-right: 10px;
+    }
+
     .avatar-border {
-        width: 45px;
-        height: 45px;
+        width: 49px;
+        height: 49px;
     }
 
     .story img {
-        width: 40px;
+        width: 45px;
     }
 
     .container .story {
@@ -460,6 +473,7 @@ body {
         width: 100%;
         overflow: hidden;
         width: 100%;
+        margin-left: 50px;
     }
 
     .feed {
@@ -471,12 +485,12 @@ body {
     }
 
     .feed .post img {
-        width: 380px;
+        width: 360px;
         height: 500px;
     }
 
     .information {
-        width: 346px;
+        width: 356px;
     }
 
     .reaction {
@@ -490,7 +504,7 @@ body {
     }
 
     .about {
-        width: 396px;
+        width: 386px;
     }
 
 
