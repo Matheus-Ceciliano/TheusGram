@@ -457,16 +457,20 @@ body {
 
     }
 
+    .container .story {
+        overflow: hidden;
+        padding-top: 2px;
+    }
 
     .avatar-border {
-        width: 49px;
-        overflow: hidden;
-        height: 49px;
+        width: 52px;
+
+        height: 52px;
         border-radius: 50%;
     }
 
     .story img {
-        width: 45px;
+        width: 47px;
         position: absolute;
 
     }
